@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    max-width: 100%;
+    font-family: "poppins", sans-serif;
+    background-image: url(/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.navbar {
+    background: black;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    position: sticky;
+    width: 300px;
+}
+
+.menu {
+    /* background: coral;   */
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30%;
+    align-items: center;
+    list-style: none;
+}
+
+.container-items {
+    /* background: greenyellow; */
+    display: flex;
+    position: sticky;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0;
+}
+
+.item-list {
+    /* background: blue; */
+    display: flex;
+    width: max-content;
+    border-style: solid;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.item-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.item-list:hover {
+    background-color: white;
+    transition: ease 1s;
+    transform: scale(1.2);
+}
+
+.item-link:hover {
+    color: black;
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+
+/* Sección 1 */
+.seccion-1 {
+    /* background: red; */
+    margin-top: 30px;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.electro {
+    width: 80%;
+    height: 80%;
+}
+
+.intro  {
+    text-align: center;
+    margin: 50px;
+}
+
+/* Sección 2 */
+.seccion-2  {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+#celu {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+#tele {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.text-celu {
+    color: white;
+    opacity: 0;
+}
+
+.btn-products {
+    text-decoration: none;
+}
+
+.btn-products:hover p  {
+    text-size-adjust: 20px;
+    transition: 1s;
+    opacity: 1;
+}
+
+.text-tele {
+    color: white;
+    opacity: 0;
+}
+
+.btn-products:hover {
+    transition: 1s;
+    opacity: 0.7;
+    scale: 0.5;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 10px;
+    gap: 10px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+footer .title {
+    width: 30rem;
+    margin-bottom: 2rem;
+}
+
+.contacto {
+    margin-bottom: 2rem;
+}
+
+.contacto a {
+    color: white;
+}
+
+.legales {
+    max-width: 280px;
+}
+
+.logo-facebook {
+    height: 100px;
+}
+
+.logo-instagram {
+    height: 100px;
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-wrap: wrap;
+        height: 100%;
+        padding: 0px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .menu {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .container-items {
+        background: red;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .logo {
+        position: relative;
+    }
+}
