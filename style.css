@@ -19,7 +19,7 @@ body {
 .navbar {
     width: 100vw;
     background: black;
-    padding: 0%;
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -194,8 +194,9 @@ footer .title {
 
 @media (max-width: 480px) {
     .navbar {
+        justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
+        flex-direction: column;
         height: 100vh;
     }
 
@@ -235,9 +236,26 @@ footer .title {
         gap: 5px;
     }
 
+    .electro {
+        width: 100vw;
+        margin-bottom: 20px;
+    }
+
+    .text-celu {
+        opacity: 1;
+    }
+
+    .text-tele {
+        opacity: 1;
+    }
+
     .seccion-2 {
         width: 100vw;
         flex-direction: column;
         gap: 20px;
     }   
+
+    .title {
+        width: 100vh;
+    }
 }
