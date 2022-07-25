@@ -60,6 +60,11 @@ margin: 20px 0;
 cursor: pointer;
 }
 
+#btn-text {
+    color: white;
+    text-align: center;
+}
+
 .login a {
 text-decoration: none;
 color: #1e1e1e;
