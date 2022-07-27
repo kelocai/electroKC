@@ -60,3 +60,43 @@ text-align: center;
     transform: rotate(360deg);
     transition-duration: 1s;
 }
+
+@media (min-width: 480px) {
+    .text-container {
+        background: none;
+        font-size: 14px;
+        width: 400px;
+        animation-name: scale-in-center;
+        animation: scale-in-center 2s 0s ease-in;
+    }
+
+    .formulario {
+        animation: scale-in-center 2s 0s ease-in;
+        animation-delay: 2s;
+    }
+}
+
+@keyframes scale-in-center {
+    0% {
+        -webkit-transform: scale(0);
+            transform: scale(0);
+            opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+    }
+}
+@keyframes scale-in-center {
+    0% {
+        -webkit-transform: scale(0);
+            transform: scale(0);
+            opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+    }
+}
