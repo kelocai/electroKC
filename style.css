@@ -42,7 +42,7 @@ body {
     margin-left: 200px; */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 20%;
     align-items: center;
     list-style: none;
