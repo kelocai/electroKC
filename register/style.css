@@ -32,6 +32,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 text-align: center;
+animation: scale-in-center 2s 0s ease-in;
 }
 
 .formulario {
@@ -44,6 +45,7 @@ text-align: center;
     border-radius: 10px;
     gap: 20px;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+    animation: scale-in-center 2s 0s ease-in;
 }
 
 .send-btn {
@@ -54,6 +56,7 @@ text-align: center;
     color: black;
     font-size: 15px;
     font-weight: 500;
+    animation: swing-in-top-fwd 2s 0s ease-in-out;
 }
 
 .send-btn:hover {
@@ -66,16 +69,6 @@ text-align: center;
         background: none;
         font-size: 14px;
         width: 400px;
-        animation-name: scale-in-center;
-        animation: scale-in-center 2s 0s ease-in;
-    }
-
-    .formulario {
-        animation: scale-in-center 2s 0s ease-in;
-    }
-
-    .send-btn { 
-        animation: swing-in-top-fwd 2s 0s ease-in-out;
     }
 }
 
