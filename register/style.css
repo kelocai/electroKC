@@ -72,7 +72,10 @@ text-align: center;
 
     .formulario {
         animation: scale-in-center 2s 0s ease-in;
-        animation-delay: 2s;
+    }
+
+    .send-btn { 
+        animation: swing-in-top-fwd 2s 0s ease-in-out;
     }
 }
 
@@ -80,7 +83,7 @@ text-align: center;
     0% {
         -webkit-transform: scale(0);
             transform: scale(0);
-            opacity: 1;
+            opacity: 0;
     }
     100% {
         -webkit-transform: scale(1);
@@ -88,15 +91,17 @@ text-align: center;
             opacity: 1;
     }
 }
-@keyframes scale-in-center {
+
+@keyframes swing-in-top-fwd {
     0% {
-        -webkit-transform: scale(0);
-            transform: scale(0);
-            opacity: 1;
+        transform: rotateX(-100deg);
+        transform-origin: top;
+        opacity: 0;
     }
     100% {
-        -webkit-transform: scale(1);
-            transform: scale(1);
-            opacity: 1;
+        transform: rotateX(0deg);
+        transform-origin: top;
+        opacity: 1;
     }
 }
+
