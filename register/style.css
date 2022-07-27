@@ -61,7 +61,7 @@ text-align: center;
     transition-duration: 1s;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 480px) {
     .text-container {
         background: none;
         font-size: 14px;
